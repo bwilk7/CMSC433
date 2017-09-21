@@ -1,0 +1,17 @@
+We 
+can
+count
+words
+using
+uniq
+It 
+is 
+a 
+nice
+hack
+to 
+count
+words 
+for 
+NLP 
+processing
