@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo cpanm IO::Async
+cpanm --sudo IO::Async
 #cpanm Markdent@0.26 Markdown::Pod@0.006
 #cpanm Devel::IPerl
 
