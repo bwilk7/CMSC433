@@ -2,7 +2,7 @@
 cpanm --force IO::Async
 cpan Module::Install
 cpanm ZMQ::Constants
-cpanm ZMQ::LibZQM3
+cpanm ZMQ::LibZMQ3
 #cpanm Markdent@0.26 Markdown::Pod@0.00
 #cpanm Devel::IPerl
 
