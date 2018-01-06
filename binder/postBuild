@@ -1,5 +1,5 @@
 #!/bin/bash
-cpanm --sudo IO::Async
+cpanm --force-install IO::Async
 #cpanm Markdent@0.26 Markdown::Pod@0.006
 #cpanm Devel::IPerl
 
