@@ -1,8 +1,9 @@
 #!/bin/bash
 cpanm --force IO::Async
-cpanm Markdent@0.26 Markdown::Pod@0.006
-cpanm Devel::IPerl
+cpanm ZMQ::Constants
+#cpanm Markdent@0.26 Markdown::Pod@0.006
+#cpanm Devel::IPerl
 
-#cat /home/jovyan/.cpanm/work/**/build.log
+cat /home/jovyan/.cpanm/work/**/build.log
 
-#exit 1
+exit 1
