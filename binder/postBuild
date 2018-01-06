@@ -1,5 +1,6 @@
 #!/bin/bash
 cpanm --force IO::Async
+cpan Module::Install
 cpanm ZMQ::Constants
 #cpanm Markdent@0.26 Markdown::Pod@0.006
 #cpanm Devel::IPerl
