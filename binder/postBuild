@@ -25,7 +25,7 @@ make install
 cpanm Markdent@0.26 Markdown::Pod@0.006
 cpanm --notest Devel::IPerl
 
-timeout 30 jupyter-console
+jupyter --data-dir
 timeout 30 iperl console 
 #cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
 #exit 1
