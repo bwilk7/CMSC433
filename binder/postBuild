@@ -12,7 +12,7 @@ cpanm ZMQ::Constants
 git clone https://github.com/lestrrat/p5-ZMQ.git
 cd p5-ZMQ
 cd ZMQ-LibZMQ3
-perl -Mlocal::lib Makefile.PL
+perl -Minc::Module::Install -Mlocal::lib Makefile.PL
 make
 make install
 #cpanm --notest ZMQ::LibZMQ3
