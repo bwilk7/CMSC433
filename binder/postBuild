@@ -18,15 +18,11 @@ git clone https://github.com/lestrrat/p5-ZMQ.git
 cd p5-ZMQ
 cd ZMQ-LibZMQ3
 perl -Minc::Module::Install -Mlocal::lib tools/genfiles.pl
-ls xs
 perl -Minc::Module::Install -Mlocal::lib Makefile.PL
-ls xs
 make
-ls xs
-#make install
 #cpanm --notest ZMQ::LibZMQ3
-#cpanm Markdent@0.26 Markdown::Pod@0.006
-#cpanm --notest Devel::IPerl
+cpanm Markdent@0.26 Markdown::Pod@0.006
+cpanm --notest Devel::IPerl
 
 #cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
-exit 1
+#exit 1
