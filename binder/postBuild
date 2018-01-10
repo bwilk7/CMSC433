@@ -10,6 +10,6 @@ cpanm ZMQ::LibZMQ3
 #cpanm Markdent@0.26 Markdown::Pod@0.00
 #cpanm Devel::IPerl
 
-cat /home/jovyan/.cpanm/work/**/build.log
+#cat /home/jovyan/.cpanm/work/**/build.log
 
-exit 1
+#exit 1
