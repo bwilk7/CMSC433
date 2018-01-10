@@ -1,3 +1,5 @@
+apt-utils
 cpanminus
 libmagic-dev
+libzmq3
 libzmq3-dev
