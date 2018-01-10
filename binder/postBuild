@@ -30,6 +30,7 @@ cd ~
 mkdir .local
 mkdir .local/share
 mkdir .local/share/jupyter
-timeout 30 iperl console 
+timeout 30 iperl notebook
+echo 'eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)"' >> ~/.bashrc
 #cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
 #exit 1
