@@ -1,6 +1,6 @@
 #!/bin/bash
 cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
-cpanm --force IO::Async
+#cpanm --force IO::Async
 
 cpanm Module::Install
 cpanm Module::Install::AuthorTests
@@ -19,5 +19,5 @@ make install
 #cpanm Markdent@0.26 Markdown::Pod@0.006
 #cpanm --notest Devel::IPerl
 
-cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
+#cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
 exit 1
