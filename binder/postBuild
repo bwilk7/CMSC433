@@ -17,6 +17,8 @@ cpanm Test::TCP@1.08
 git clone https://github.com/lestrrat/p5-ZMQ.git
 cd p5-ZMQ
 cd ZMQ-LibZMQ3
+perl -Minc::Module::Install -Mlocal::lib tools/genfiles.pl
+ls xs
 perl -Minc::Module::Install -Mlocal::lib Makefile.PL
 ls xs
 make
