@@ -9,9 +9,15 @@ cpanm Module::Install::XSUtil
 #wget -O - https://raw.githubusercontent.com/zmughal-p5CPAN/p5-Alt-Alien-ZMQ-Alien-ZMQ-latest/master/maint/install-zmq-libzmq.pl | perl - --notest Alt::Alien::ZMQ::Alien::ZMQ::latest ZMQ::LibZMQ3 Net::Async::ZMQ 
 
 cpanm ZMQ::Constants
+git clone https://github.com/lestrrat/p5-ZMQ.git
+cd p5-ZMQ
+cd ZMQ-LibZMQ3
+perl Makefile.PL
+make
+make install
 #cpanm --notest ZMQ::LibZMQ3
-cpanm Markdent@0.26 Markdown::Pod@0.006
-cpanm --notest Devel::IPerl
+#cpanm Markdent@0.26 Markdown::Pod@0.006
+#cpanm --notest Devel::IPerl
 
 cat /home/jovyan/.cpanm/work/**/build.log | tail -1000
 exit 1
