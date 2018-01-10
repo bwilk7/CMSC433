@@ -13,7 +13,8 @@ git clone https://github.com/lestrrat/p5-ZMQ.git
 cd p5-ZMQ
 cd ZMQ-LibZMQ3
 perl -Minc::Module::Install -Mlocal::lib Makefile.PL
-cat Makefile
+cat xs/typemap
+Makefile
 #make install
 #cpanm --notest ZMQ::LibZMQ3
 #cpanm Markdent@0.26 Markdown::Pod@0.006
