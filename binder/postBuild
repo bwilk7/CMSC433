@@ -1,12 +1,37 @@
 #!/bin/bash
 cpanm --local-lib=~/perl5 local::lib && eval $(perl -I ~/perl5/lib/perl5/ -Mlocal::lib)
-cpanm --force IO::Async
-cpan Module::Install
+#cpanm --force IO::Async
+
+cpanm inc::Module::Install
+cpanm Module::Install::AuthorTests
+cpanm Module::Install::CheckLib
+cpanm Module::Install::XSUtil
+#wget -O - https://raw.githubusercontent.com/zmughal-p5CPAN/p5-Alt-Alien-ZMQ-Alien-ZMQ-latest/master/maint/install-zmq-libzmq.pl | perl - --notest Alt::Alien::ZMQ::Alien::ZMQ::latest ZMQ::LibZMQ3 Net::Async::ZMQ 
+
 cpanm ZMQ::Constants
-cpanm ZMQ::LibZMQ3
-#cpanm Markdent@0.26 Markdown::Pod@0.00
-#cpanm Devel::IPerl
+cpanm Task::Weaken
+cpanm Test::Fatal
+cpanm Test::SharedFork
+cpanm Test::TCP@1.08
 
-#cat /home/jovyan/.cpanm/work/**/build.log
+git clone https://github.com/lestrrat/p5-ZMQ.git
+cd p5-ZMQ
+cd ZMQ-LibZMQ3
+perl -Minc::Module::Install -Mlocal::lib tools/genfiles.pl
+perl -Minc::Module::Install -Mlocal::lib Makefile.PL
+make
+make install
+#cpanm --notest ZMQ::LibZMQ3
+cpanm Markdent@0.26 Markdown::Pod@0.006
+cpanm --notest Devel::IPerl
 
-#exit 1
+jupyter --data-dir
+cd ~
+mkdir .local
+mkdir .local/share
+mkdir .local/share/jupyter
+timeout 30 iperl notebook
+
+#edit kernel.json to add env dictionary
+sed -ie "s|}$|$(cat ~/binder/perlEdit)|" .local/share/jupyter/kernels/iperl/kernel.json
+
