@@ -36,7 +36,7 @@ timeout 30 iperl notebook
 sed -ie "s|}$|$(cat ~/binder/perlEdit)|" .local/share/jupyter/kernels/iperl/kernel.json
 
 mkdir ~/.local/R_libs
-export R_LIBS=~./local/R_libs/ 
+export R_LIBS=~/.local/R_libs/ 
 R -e ".libPaths()";
 R --quiet -e "install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))"
 R --quiet -e "devtools::install_github('IRkernel/IRkernel')"
