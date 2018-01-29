@@ -2,3 +2,4 @@ apt-utils
 cpanminus
 libmagic-dev
 libzmq3-dev
+r-base
