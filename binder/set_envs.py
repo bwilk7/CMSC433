@@ -11,7 +11,7 @@ env = {}
 with open(variables_path) as f:
 	for line in f:
 		parts = line.strip().split(":")
-		env[part[0]] = part[1]
+		env[parts[0]] = parts[1]
 
 kernel['env'] = env
 json.dump(kernel,open(kernel_path,'w'))
