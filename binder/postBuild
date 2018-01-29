@@ -43,5 +43,5 @@ R --quiet -e "devtools::install_github('IRkernel/IRkernel')"
 R --quiet -e "IRkernel::installspec()"
 R --quiet -e "install.packages(c('ggplot2','ggrepel'),repos = 'http://cran.us.r-project.org')"
 
-python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/ir r_env 
+python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/ir/kernel.json r_env 
 
