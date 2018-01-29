@@ -34,7 +34,7 @@ mkdir .local
 
 #edit kernel.json to add env dictionary
 #sed -ie "s|}$|$(cat ~/binder/perlEdit)|" .local/share/jupyter/kernels/iperl/kernel.json
-
+#python set_envs.py .local/share/jupyter/kernels/iperl/kernel.json perl_env
 mkdir ~/.local/R_libs
 export R_LIBS=~/.local/R_libs/ 
 R -e ".libPaths()";
@@ -43,5 +43,5 @@ R --quiet -e "devtools::install_github('IRkernel/IRkernel')"
 R --quiet -e "IRkernel::installspec()"
 R --quiet -e "install.packages(c('ggplot2','ggrepel'),repos = 'http://cran.us.r-project.org')"
 
-python set_envs.py ~/.local/share/jupyter/kernels/ir r_env 
+python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/ir r_env 
 
