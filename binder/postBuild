@@ -34,7 +34,6 @@ timeout 30 iperl notebook
 
 python ~/binder/set_envs.py .local/share/jupyter/kernels/iperl/kernel.json ~/binder/perl_env
 cat .local/share/jupyter/kernels/iperl/kernel.json
-exit 1
 
 mkdir ~/.local/R_libs
 export R_LIBS=~/.local/R_libs/ 
