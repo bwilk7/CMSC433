@@ -2,7 +2,7 @@ apt-utils
 cpanminus
 libmagic-dev
 libzmq3-dev
-ir-base
+r-base
 htop
 parallel
 bc
