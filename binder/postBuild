@@ -47,3 +47,10 @@ python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/ir/kernel.json ~/bind
 
 
 python -m bash_kernel.install
+
+mkdir ~/Research
+mkdir ~/Research/Data/
+cd ~/Research/Data
+git clone https://github.com/UniversalDependencies/UD_English-EWT.git
+
+
