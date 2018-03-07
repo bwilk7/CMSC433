@@ -6,3 +6,4 @@ r-base
 htop
 parallel
 bc
+gfortran
