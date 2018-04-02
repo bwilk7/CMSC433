@@ -54,4 +54,11 @@ mkdir ~/Research/Data/
 cd ~/Research/Data
 git clone https://github.com/UniversalDependencies/UD_English-EWT.git
 
+npm config set prefix ~
+npm install -g ijavascript
+~/bin/ijsinstall --install=local
+echo "PATH:$PATH:/home/jovyan/bin/" > /home/jovyan/binder/js_env
+
+python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/javascript/kernel.json ~/binder/js_env
+
 

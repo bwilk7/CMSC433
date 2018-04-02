@@ -10,7 +10,7 @@ env = {}
 
 with open(variables_path) as f:
 	for line in f:
-		parts = line.strip().split(":")
+		parts = line.strip().split(":",1)
 		if parts:
 			env[parts[0]] = parts[1]
 
