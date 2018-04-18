@@ -9,6 +9,6 @@ bc
 gfortran
 nodejs-legacy 
 npm
-php-7.1
+php7.1
 php-zmq
 composer 
