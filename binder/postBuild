@@ -61,4 +61,9 @@ echo "PATH:$PATH:/home/jovyan/bin/" > /home/jovyan/binder/js_env
 
 python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/javascript/kernel.json ~/binder/js_env
 
+cd ~
+
+wget https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar
+
+./jupyter-php-installer.phar install
 
