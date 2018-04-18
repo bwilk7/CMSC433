@@ -7,7 +7,7 @@ htop
 parallel
 bc
 gfortran
-nodejs-legacy 
+nodejs 
 npm
 php7.1
 php-zmq
