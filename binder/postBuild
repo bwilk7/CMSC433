@@ -64,6 +64,7 @@ python ~/binder/set_envs.py ~/.local/share/jupyter/kernels/javascript/kernel.jso
 cd ~
 
 wget https://litipk.github.io/Jupyter-PHP-Installer/dist/jupyter-php-installer.phar
+chmod +x ./jupyter-php-installer.phar
 
 ./jupyter-php-installer.phar install
 
