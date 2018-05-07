@@ -68,3 +68,13 @@ chmod +x ./jupyter-php-installer.phar
 
 ./jupyter-php-installer.phar install
 
+cd ~
+
+wget https://julialang-s3.julialang.org/bin/linux/x64/0.6/julia-0.6.2-linux-x86_64.tar.gz
+
+tar -xzvf julia-0.6.2-linux-x86_64.tar.gz
+
+cd julia-d386e40c17/bin
+
+
+./julia -e 'Pkg.add("IJulia")'
