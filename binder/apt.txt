@@ -12,3 +12,10 @@ npm
 php7.1
 php-zmq
 composer 
+libtool
+libffi-dev 
+ruby
+ruby-dev
+make
+libczmq-dev
+

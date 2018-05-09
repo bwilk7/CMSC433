@@ -78,3 +78,8 @@ cd julia-d386e40c17/bin
 
 
 ./julia -e 'Pkg.add("IJulia")'
+
+cd ~
+
+gem install  cztop iruby
+iruby register --force
