@@ -81,5 +81,5 @@ cd julia-d386e40c17/bin
 
 cd ~
 
-gem install  cztop iruby
+gem install  cztop iruby --user-install
 iruby register --force
